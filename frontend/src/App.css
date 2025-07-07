@@ -1,0 +1,130 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  padding: 36px 32px 32px 32px;
+  text-align: center;
+}
+
+h1 {
+  color: #f76b1c;
+  margin-bottom: 28px;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+textarea {
+  width: 99%;
+  min-height: 220px;
+  border-radius: 10px;
+  border: 1.5px solid #f76b1c;
+  padding: 14px;
+  font-size: 1.1rem;
+  resize: vertical;
+  margin-bottom: 18px;
+  transition: border 0.2s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  border: 2px solid #fda085;
+}
+
+button {
+  background: linear-gradient(90deg, #f76b1c 0%, #fad961 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(247, 107, 28, 0.08);
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:disabled {
+  background: #f6d365;
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+button:hover:not(:disabled) {
+  background: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.result {
+  margin-top: 32px;
+  background: #f6d365;
+  border-radius: 10px;
+  padding: 18px 0;
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(253, 160, 133, 0.08);
+}
+
+.error {
+  margin-top: 24px;
+  color: #d7263d;
+  background: #fff0f3;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
